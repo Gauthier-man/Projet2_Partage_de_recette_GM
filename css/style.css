@@ -62,7 +62,7 @@ main {
   justify-content: space-around; */
 }
 
-.tag {
+#info-recette .tag {
   width: 150px;
   height: 100%;
   background-color: #dbeef1;
@@ -72,14 +72,14 @@ main {
   justify-content: space-evenly;
 }
 
-.tag img {
+#info-recette .tag img {
   width: 25px;
   height: 25px;
   margin: auto 0;
   justify-content: center;
 }
 
-.tag p {
+#info-recette .tag p {
   margin: auto;
   white-space: nowrap; /* Empêcher le texte de dépasser et d'aller à la ligne */
 }
@@ -162,10 +162,14 @@ main {
   background-color: white;
   border-radius: 2rem;
   gap: 0.5rem;
+  margin-top: 5%;
+  margin-left: 5%;
 }
 
 #slider {
   border-radius: 2rem;
+  display: flex;
+  height: 600px;
 }
 
 #slider h1 {
@@ -185,11 +189,182 @@ main {
 .container_spicy {
   /* padding: 3rem; */
   background-color: #e7fafe;
-  border-radius: 2rem;
+  border-radius: 2rem 0 0 2rem;
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
 .picture_chicken img {
   width: 100%;
   object-fit: cover;
+}
+
+#cercle_pouce {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 25px;
+}
+
+#photo_slider {
+  width: 50%;
+  /* height: 100%; */
+  border-radius: 0 50px 50px 0;
+  object-fit: cover;
+}
+
+#categories h2 {
+  font-size: 2rem;
+}
+
+.meal_container {
+  display: flex;
+  justify-content: space-around;
+}
+.food-card {
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 0) 0%,
+    rgba(228, 230, 241, 1) 100%
+  );
+  border-radius: 2rem;
+  width: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text_categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text_categories h5 {
+  background-color: #e7fafe;
+  padding: 1.5rem;
+  border-radius: 1rem;
+}
+
+.text_simple {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.text_simple h1 {
+  font-size: 2rem;
+}
+
+.text_simple p {
+  width: 55%;
+  text-align: center;
+}
+
+.recipe-details {
+  background-color: #e8f9fd;
+  width: 350px;
+  height: 450px;
+  border-radius: 2rem;
+}
+
+.recipe-details img {
+  width: 90%;
+  object-fit: cover;
+  border-radius: 2rem;
+  margin: 1rem;
+}
+
+.recipe-details h3 {
+  margin-left: 5%;
+}
+
+.container_recipe_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 2rem;
+}
+
+.chef-kitchen img {
+  width: 100%;
+  object-fit: cover;
+}
+.chef-promo {
+  width: 31%;
+}
+.chef-promo h1 {
+  font-size: 2rem;
+}
+
+.chef-promo p {
+  font-size: 0.8rem;
+}
+
+.btn {
+  width: 173px;
+  height: 57px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 15px;
+}
+
+.post-insta {
+  background: linear-gradient(180deg, #e7f9fd00 0%, #e7f9fd 100%);
+}
+
+.instagram_content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.instagram_content h1 {
+  font-size: 2.1rem;
+}
+
+.instagram_content p {
+  width: 52%;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.instagram_picture {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3.5rem;
+}
+
+.photo img {
+  width: 85%;
+  object-fit: cover;
+}
+
+.btn-center {
+  display: flex;
+  justify-content: center;
+}
+
+.most-viewed h1 {
+  font-size: 2rem;
+}
+
+.most-viewed p {
+  font-size: 0.8rem;
+}
+
+.text_viewed {
+  display: flex;
+  align-items: center;
 }
